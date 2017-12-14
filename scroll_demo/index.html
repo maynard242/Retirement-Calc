@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <title>Scroll Viz Test</title>
+  <meta name="description" content="Main file for W209 Project save to http://people.ischool.berkeley.edu/~lteo/scroll_demo">
+  <meta name="author" content="David Harding, Matt Post, Leslie Teo">
+
+  <!-- <script type="text/javascript" src="d3.js"></script> -->
+  <!-- <script scr = "d3.min.js"></script> -->
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+
+  </head>
+
+<body>
+<div class="container">
+  <div id='graphic'>
+    <div id='sections'>
+      <section class="step">
+        <div class="title">How Much Savings Do I Need?</div>
+        </br>
+        Let's assume you have been savings diligently and now have a million dollars in the bank. </br> </br>
+
+        You expect to live for another 30 years and want to maintain your standing of living which entails $50,0000 in expenses per year.<br/><br/>
+
+        Will the $1,000,000 be enough?
+      </section>
+      <section class="step">
+        <div class="title">But 30 years is a long time...</div>
+        </br>
+        Unfortunately, spending that much  each year means your money runs out after twenty years.
+      </section>
+      <section class="step">
+        <div class="title">And that doesn't account for the rising cost of living</div>
+        </br>
+        Inflation leads to an increase in living expenses each year. If you assume 3% inflation, your annual living expenses will rise to over $120,000 in thirty years. <br/></br>
+
+        But your money will have run out in half that time!
+      </section>
+      <section class="step">
+        <div class="title">The solution: earn a return on your assets</div>
+        </br>
+        Investing your money to earn a reasonable return each year allows you to fund your retirement. If you can earn 6% each year, you will have enough to last nearly thirty years, even with 3% inflation.
+      </section>
+      <section class="step">
+        <div class="title">The power of compounding</div>
+        </br>
+        Earning slightly higher returns can make a big difference. If you can earn 7% each year, you'll still have over half your original nestegg left at the end of thirty years.
+      </section>
+      <section class="step">
+        <div class="title">How to earn 7%?</div>
+        <br/>
+        US government bonds are one possible investment option. The risk of default is extremely low. But over the last hundred years treasury bonds with ten year maturities have had an average annual return of only about 4%.
+      </section>
+      <section class="step">
+        <div class="title">Stocks could provide higher returns but these are less certain</div>
+        <br/>
+        The average annual total return from investing in the stockmarket over the last hundred years (as measured by the S&P500 index) has been around 10%.
+        <br/><br/>
+        But the risk has also been higher. If you invest in a stock, you could lose all your money. For the S&P500 as a whole, returns over 30 years have between 4% and 16%, even if on average it was 10%.
+
+      </section>
+      <section class="step">
+        <div class="title">The power of diversification</div>
+        <br/>
+        If we combine stocks and bonds in a 50/50 mix, we could achieve our goal of 7%. We benefit from diversification.
+
+      </section>
+      <section class="step">
+        <div class="title">But not so fast...</div>
+        <br/>
+        A 50/50 portfolio might have returned 7% on average, but the best 30 year performance was 11% while the worst was 4.6%. (This might not seem like much but over 30 years, this translates to a difference of more than 6 times.)
+        <br/><br/>
+        Clearly when you started investing matters!
+      </section>
+      <section class="step">
+        <div class="title">Explore</div>
+        <br/>
+        In the following interactive app explore  how (a) horizon, (b) starting level of savings, and (c) expected spending changes your savings.
+        <a href="https://retirementplans.vanguard.com/VGApp/pe/pubeducation/calculators/RetirementNestEggCalc.jsf">Retirement Calculator</a>
+
+
+
+        <br/></br/>
+      </section>
+
+    </div>
+    <div id='vis'>
+    </div>
+    <div id="extra-space">
+    </div>
+  </div>
+</div>
+
+
+<script src="lib/d3.js"></script>
+<script src="js/scroller.js"></script>
+<script src="js/sections.js"></script>
+</body>
+</html>
